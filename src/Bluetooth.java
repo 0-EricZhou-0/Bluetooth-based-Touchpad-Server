@@ -22,7 +22,6 @@ import java.awt.event.*;
 
 import java.awt.Dimension;
 
-
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
@@ -80,7 +79,7 @@ class SimpleSPPServer {
                 handler = new HandleSelect();
                 break;
             case SCROLL:
-                handler = new HandleScroll(Integer.parseInt(paramList[1]));
+                handler = new HandleScroll(Integer.parseInt(paramList[2]));
                 break;
             case UNDO:
                 handler = new HandleUndo();
